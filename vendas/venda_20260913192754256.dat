@@ -1,0 +1,17 @@
+{
+    "numero": "20260913192754256",
+    "usuario": "Viyctor",
+    "nome": "Viyctor",
+    "data_hora": "2026-09-13 19:27:54",
+    "forma_pagamento": "Cartão de Crédito",
+    "total": "R$ 49,90",
+    "itens": [
+        {
+            "titulo": "O Iluminado",
+            "autor": "Stephen King",
+            "preco": "R$ 49,90",
+            "qty": 1,
+            "categoria": "Horror"
+        }
+    ]
+}

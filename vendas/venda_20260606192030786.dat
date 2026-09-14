@@ -1,0 +1,17 @@
+{
+    "numero": "20260606192030786",
+    "usuario": "Viyy",
+    "nome": "João Victor",
+    "data_hora": "2026-06-06 19:20:30",
+    "forma_pagamento": "Cartão de Crédito",
+    "total": "R$ 120,00",
+    "itens": [
+        {
+            "titulo": "Um Cardo-Azul (Físico)",
+            "autor": "Helaine Araújo",
+            "preco": "R$ 120,00",
+            "qty": 1,
+            "categoria": "Romance Fantasia"
+        }
+    ]
+}

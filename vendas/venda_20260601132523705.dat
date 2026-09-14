@@ -1,0 +1,17 @@
+{
+    "numero": "20260601132523705",
+    "usuario": "Viyctor",
+    "nome": "João Victor",
+    "data_hora": "2026-06-01 13:25:23",
+    "forma_pagamento": "Cartão de Crédito",
+    "total": "R$ 39,90",
+    "itens": [
+        {
+            "titulo": "Como Eu Era Antes de Você",
+            "autor": "Jojo Moyes",
+            "preco": "R$ 39,90",
+            "qty": 1,
+            "categoria": "Romance"
+        }
+    ]
+}

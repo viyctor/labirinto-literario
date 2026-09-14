@@ -1,0 +1,17 @@
+{
+    "numero": "20260601132655875",
+    "usuario": "Viyctor",
+    "nome": "João Victor",
+    "data_hora": "2026-06-01 13:26:55",
+    "forma_pagamento": "Pix",
+    "total": "R$ 39,90",
+    "itens": [
+        {
+            "titulo": "A Culpa é das Estrelas",
+            "autor": "Jhon Green",
+            "preco": "R$ 39,90",
+            "qty": 1,
+            "categoria": "Romance"
+        }
+    ]
+}

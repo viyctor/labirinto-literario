@@ -1,0 +1,268 @@
+/* estrelinhas do fundo */
+.stars-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.star {
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  animation: twinkle ease-in-out infinite;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(1);   }
+  50%       { opacity: 1;   transform: scale(1.4); }
+}
+
+/* layout */
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, #010812 0%, #020d1f 50%, #0a1f3a 100%);
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 4rem 2rem;
+}
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 80% at 80% 50%, rgba(0, 200, 255, 0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 40% at 10% 80%, rgba(10, 42, 74, 0.7) 0%, transparent 60%);
+  pointer-events: none;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 200, 255, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.hero-content {
+  position: relative;
+  z-index: 3;
+  max-width: 620px;
+  flex: 1;
+}
+.hero-visual {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3rem;
+  z-index: 3;
+  animation: float 3.5s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0);    }
+  50%       { transform: translateY(-12px); }
+}
+
+/* badge e titulo */
+.hero-badge {
+  display: inline-block;
+  background: #7de8ff;
+  color: #020d1f;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+  animation: pulse-badge 2s ease-in-out infinite;
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.4);
+}
+@keyframes pulse-badge {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 200, 255, 0.5); }
+  50%       { box-shadow: 0 0 0 8px rgba(0, 200, 255, 0);  }
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 900;
+  color: #e8f4ff;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.hero-title em {
+  color: #7de8ff;
+  font-style: italic;
+}
+.hero-subtitle {
+  color: rgba(157, 212, 240, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  max-width: 520px;
+}
+.hero-meta {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: rgba(157, 212, 240, 0.55);
+  font-size: 0.88rem;
+}
+.hero-meta span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* botoes */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+.btn-hero-primary {
+  background: #7de8ff;
+  color: #020d1f;
+  border: none;
+  padding: 0.9rem 2rem;
+  border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(0, 200, 255, 0.25);
+}
+.btn-hero-primary:hover {
+  background: #5dd4f0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 200, 255, 0.4);
+}
+.btn-hero-secondary {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0.9rem 2rem;
+  border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-hero-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.7);
+  color: #fff;
+}
+
+/* opcoes de compra */
+.hero-buy-options {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+.buy-option {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  align-items: center;
+}
+.buy-option .btn-hero-primary {
+  font-size: 0.88rem;
+  padding: 0.75rem 1.25rem;
+  white-space: nowrap;
+}
+
+/* carrossel de livros */
+.hero-books-display {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  animation: float 3.5s ease-in-out infinite;
+}
+.hero-book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.hero-book-main img {
+  height: 460px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow:
+    -12px 12px 40px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(0, 200, 255, 0.15),
+    0 0 80px rgba(0, 200, 255, 0.06);
+  border: 1px solid rgba(125, 232, 255, 0.2);
+}
+.hero-book-plus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 0.25rem;
+}
+.hero-book-kindle {
+  animation: float 3.5s ease-in-out infinite;
+  animation-delay: 0.5s;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.hero-book-kindle img {
+  height: 260px;
+  width: auto;
+  border-radius: 12px;
+  mix-blend-mode: screen;
+}
+.hero-promo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 200, 255, 0.12);
+  border: 1px solid rgba(0, 200, 255, 0.35);
+  color: #7ee8ff;
+  font-size: 0.9rem;
+  padding: 0.45rem 1rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.hero-promo-badge strong {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+  }
+  .hero-visual {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+  .hero-meta {
+    justify-content: center;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-buy-options {
+    gap: 0.5rem;
+  }
+  .hero-books-display {
+    gap: 1rem;
+  }
+  .hero-book-main img {
+    height: 220px;
+  }
+  .hero-book-kindle img {
+    height: 130px;
+  }
+}
+
+/* Viyctor & Yasmim
