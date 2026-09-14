@@ -18,7 +18,7 @@ Loja virtual de livros de ficção. O utilizador pode:
 
 TECNOLOGIAS:
 - PHP
-- MySQL (banco de dados "labirinto literario")
+- MySQL (banco de dados "labirinto-literario")
 - HTML
 - CSS
 - JavaScript

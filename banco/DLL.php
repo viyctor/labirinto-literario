@@ -152,8 +152,4 @@ function salvarXML($server, $user, $password, $db, $xml){
     return $resultado;
   }
   
-
-
-
-
 ?>
