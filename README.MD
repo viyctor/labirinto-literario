@@ -4,7 +4,7 @@ Sistema de vitrine com login e venda (PHP)
 ============================================
 
 INTEGRANTES:
-- João Victor Santos
+- João Victor Santos da Silveira
 - Yasmim Santos Jardim
 
 DESCRIÇÃO:
@@ -24,7 +24,7 @@ TECNOLOGIAS:
 - JavaScript
 
 ESTRUTURA DE PASTAS:
-PLL/
+Labirinto Literario/
 ├── index.php                (vitrine)
 ├── login.php                (login)
 ├── cadastro-dados.php       (cadastro etapa 1)
