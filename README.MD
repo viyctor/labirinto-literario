@@ -23,6 +23,7 @@ TECNOLOGIAS:
 - CSS
 - JavaScript
 
+```
 ESTRUTURA DE PASTAS:
 Labirinto Literario/
 ├── index.php                (vitrine)
@@ -50,6 +51,7 @@ Labirinto Literario/
 ├── css/
 ├── js/                      (main.js)
 └── img/                     (imagens e capas)
+```
 
 COMO EXECUTAR:
 1. Copiar a pasta Labirinto Literario para C:\xampp\htdocs\
